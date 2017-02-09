@@ -21,3 +21,16 @@
 
 en:
   hello: "Hello world"
+  users: 
+    new:
+      submit_create: "Create my account"
+      header: "Sign up"
+
+  app:
+    views:
+      shared:
+        errors_container: "The form contains"
+        error: "error"
+    controller:
+      users_create_flash_success: "Welcome to the E-leaning Website!"
+      users_find_flash_unsuccess: "User not found"

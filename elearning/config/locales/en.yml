@@ -5,3 +5,8 @@ en:
   title_page: "Framgia Elearning"
   welcome: "Welcome to Framgia Elearning"
   elearning: "elearning.jpg"
+  sign_up: "Sign up"
+  404_not_found: "404 Not Found!"
+  confirm: "Confirmation"
+  create_account: "Create my account"
+  error: "error"

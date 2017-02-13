@@ -10,3 +10,18 @@ en:
   confirm: "Confirmation"
   create_account: "Create my account"
   error: "error"
+  invalid_email_password: "Invalid email/password combination"
+  sessions:
+    new:
+      login: "Login"
+      sign_up_now: "Sign up now!"
+      fogot_pass: "(forgot password)"
+      remember_me: "Remember me on this computer"
+      new_user: "New user?"
+  layouts:
+    header:
+      users: "Users"
+      logout: "Logout"
+      acc: "Account"
+      profile: "Profile"
+      settings: "Settings"

@@ -13,17 +13,17 @@
 ActiveRecord::Schema.define(version: 20170207070925) do
 
   create_table "activities", force: :cascade do |t|
-    t.integer  "id_User"
-    t.integer  "id_Target"
+    t.integer  "user_id"
+    t.integer  "target_id"
     t.integer  "type_Activity"
-    t.string   "Content"
+    t.string   "content"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end
 
   create_table "answers", force: :cascade do |t|
-    t.integer  "id_Word"
-    t.string   "Content"
+    t.integer  "word_id"
+    t.string   "content"
     t.boolean  "is_Correct"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -36,23 +36,23 @@ ActiveRecord::Schema.define(version: 20170207070925) do
   end
 
   create_table "lessons", force: :cascade do |t|
-    t.integer  "id_User"
-    t.integer  "id_Category"
+    t.integer  "user_id"
+    t.integer  "category_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
 
   create_table "relationships", force: :cascade do |t|
-    t.integer  "id_Followed"
-    t.integer  "id_Follower"
+    t.integer  "followed_id"
+    t.integer  "follower_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
 
   create_table "results", force: :cascade do |t|
-    t.integer  "id_Lession"
-    t.integer  "id_Answer"
-    t.integer  "id_Word"
+    t.integer  "lession_id"
+    t.integer  "answer_id"
+    t.integer  "word_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -68,7 +68,7 @@ ActiveRecord::Schema.define(version: 20170207070925) do
   end
 
   create_table "words", force: :cascade do |t|
-    t.integer  "id_Category"
+    t.integer  "category_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

@@ -9,8 +9,16 @@ en:
   404_not_found: "404 Not Found!"
   confirm: "Confirmation"
   create_account: "Create my account"
+  save_changes: "Save changes"
   error: "error"
   invalid_email_password: "Invalid email/password combination"
+  please_login: "Please log in."
+  all_users: "All users"
+  delete_user: "User deleted"
+  delete: "Delete"
+  confirm_sure: "You sure?"
+  edit_user: "Edit user"
+  change: "Change"
   sessions:
     new:
       login: "Login"
@@ -25,3 +33,7 @@ en:
       acc: "Account"
       profile: "Profile"
       settings: "Settings"
+  users:
+    edit:
+      update_user: "Update your profile"
+      updated: "Profile updated"

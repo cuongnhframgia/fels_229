@@ -1,5 +1,5 @@
 class Result < ApplicationRecord
-  belong_to :lesson
-  belong_to :answer
-  belong_to :word
+  belongs_to :lesson
+  belongs_to :answer
+  belongs_to :word
 end

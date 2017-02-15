@@ -1,5 +1,5 @@
 class Answer < ApplicationRecord
-  belong_to :word
+  belongs_to :word
   
   has_many :results
 end

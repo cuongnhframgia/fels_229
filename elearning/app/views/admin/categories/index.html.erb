@@ -1,0 +1,25 @@
+<% provide :title, t(".all_category") %>
+<h1><%= t ".all_category" %></h1>
+
+<ul>
+  <div class="col-md-1"><%= link_to "Add",
+    new_admin_category_path, class: "btn btn-info" %></div>
+</ul>
+
+<%= will_paginate %>
+
+<ul class= "category">
+  <% @categories.each do |category| %>
+    <li class="col-md-12">
+      <div id= "category", class="col-md-8"><%= category.name %> </div>
+      <div class="col-md-1"><%= link_to t(".edit"),
+        edit_admin_category_path(category), class: "btn btn-info" %></div>
+      <div class="col-md-1"><%= link_to t(".delete"), 
+        admin_category_path(category),method: :delete, 
+        data: {confirm: "You Sure?"}, 
+        class: "btn btn-danger" %></div>
+    </li>
+  <% end %>
+</ul>
+
+<%= will_paginate %>

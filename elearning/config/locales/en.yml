@@ -10,7 +10,6 @@ en:
   confirm: "Confirmation"
   create_account: "Create my account"
   save_changes: "Save changes"
-  error: "error"
   invalid_email_password: "Invalid email/password combination"
   please_login: "Please log in."
   all_users: "All users"
@@ -20,6 +19,11 @@ en:
   edit_user: "Edit user"
   change: "Change"
   activity: "Activity"
+  add_success: "Add Success"
+  delete_category: "Category Deleted"
+  wrong_category: "Can't delete category"
+  category_not_found: "Category not found"
+  not_admin: "You are not admin"
   
   activities:
     activity: 
@@ -44,6 +48,7 @@ en:
       acc: "Account"
       profile: "Profile"
       settings: "Settings"
+      categories: "Categories"
   users:
     edit:
       update_user: "Update your profile"
@@ -53,4 +58,20 @@ en:
       destroy_flash: "Activity deleted"
     application:
       ask_login: "Please login"
-  
+  admin:
+    categories:
+      new:
+        add_category: "Create"
+        create_category: "Create new Category"
+      index:
+        edit: "Edit"
+        delete: "Delete"
+        all_category: "All Category"
+      edit:
+        change: "Change Categories"
+        update: "Edit Categories"
+      update:
+        update: "Category updated"
+  shared:
+    error: "error"
+    contains: "The form contains "

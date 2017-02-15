@@ -19,6 +19,17 @@ en:
   confirm_sure: "You sure?"
   edit_user: "Edit user"
   change: "Change"
+  activity: "Activity"
+  
+  activities:
+    activity: 
+      post_time: "Post"
+      post_time_end: "ago."
+      ask_delete: "You sure?"
+  shared:
+    user_info:
+      view_profile: "View my profile"
+      activity_count: "activity"
   sessions:
     new:
       login: "Login"
@@ -37,3 +48,9 @@ en:
     edit:
       update_user: "Update your profile"
       updated: "Profile updated"
+  controller:
+    activities:
+      destroy_flash: "Activity deleted"
+    application:
+      ask_login: "Please login"
+  

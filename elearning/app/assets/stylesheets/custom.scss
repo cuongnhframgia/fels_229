@@ -246,3 +246,19 @@ span.picture {
     border: 0;
   }
 }
+
+/* category */
+
+.category {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  li {
+    overflow: auto;
+    padding: 12px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
+#category{
+  text-align: left;
+}

@@ -1,0 +1,15 @@
+<%= form_for :option, url: words_path, method: "get" do |f| %>
+  <ul class="nav navbar-nav navbar-right">
+    <select name="status">
+      <option value="all"> </option>
+      <option value="learned"> </option>
+      <option value="unlearned"> </option>
+    </select>
+    <select name="category">
+      <% @categories.each do |c| %>
+        <option value="<%= c.id%>"> <%= c.id %> </option>
+      <% end %>
+    </select>
+    <%= f.submit t("search"), class: "btn btn-primary" %>
+  </ul>
+<% end %>

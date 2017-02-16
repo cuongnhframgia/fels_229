@@ -3,7 +3,7 @@
     <%= link_to t("title_page"), root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to t("home"), root_path, id: "head" %></li>        
+        <li><%= link_to t("home"), root_path, id: "head" %></li>
         <% if logged_in? %>
           <li><%= link_to t(".users"), users_path %></li>
           <li><%= link_to t(".categories"), admin_categories_path %></li>

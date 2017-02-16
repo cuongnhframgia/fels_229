@@ -1,7 +1,7 @@
 class CreateResults < ActiveRecord::Migration[5.0]
   def change
     create_table :results do |t|
-      t.integer :lession_id
+      t.integer :lesson_id
       t.integer :answer_id
       t.integer :word_id
 

@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(version: 20170207070925) do
   end
 
   create_table "results", force: :cascade do |t|
-    t.integer  "lession_id"
+    t.integer  "lesson_id"
     t.integer  "answer_id"
     t.integer  "word_id"
     t.datetime "created_at", null: false
@@ -69,6 +69,7 @@ ActiveRecord::Schema.define(version: 20170207070925) do
 
   create_table "words", force: :cascade do |t|
     t.integer  "category_id"
+    t.string   "content"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

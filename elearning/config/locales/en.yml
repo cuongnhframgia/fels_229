@@ -13,6 +13,7 @@ en:
   invalid_email_password: "Invalid email/password combination"
   please_login: "Please log in."
   all_users: "All users"
+  all_words: "All words"
   delete_user: "User deleted"
   delete: "Delete"
   confirm_sure: "You sure?"
@@ -24,6 +25,14 @@ en:
   wrong_category: "Can't delete category"
   category_not_found: "Category not found"
   not_admin: "You are not admin"
+  word: "Word list"
+  category: "Category"
+  learned: "Learned"
+  unlearned: "Unlearned"
+  all_words: "All Word"
+  status: "Status"
+  search: "Search"
+  clear: "Clear"
   
   activities:
     activity: 

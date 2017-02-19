@@ -1,0 +1,16 @@
+<%= form_for [:admin, @word], remote: true do |f| %>
+  <div id="div-error-messages" ></div>
+  <%= f.label :content %>
+  <%= f.text_field :content, class: "form-control" %></br>
+  <%= f.label :choose_category %>
+  <%= f.select :category_id, options_for_select(@categories), {},
+    {class: "form form-group form-control"} %>
+  <%= f.label :answer %>
+  <div class="row">
+    <%= f.fields_for :answers do |answer| %>
+      <%= render "answer_field", f: answer %>
+    <% end %>
+    <%= link_to_add_fields t(".add_answer"), f, :answers %>
+  </div>
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>

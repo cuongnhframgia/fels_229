@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20170207070925) do
   create_table "answers", force: :cascade do |t|
     t.integer  "word_id"
     t.string   "content"
-    t.boolean  "is_Correct"
+    t.boolean  "is_correct"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -69,6 +69,7 @@ ActiveRecord::Schema.define(version: 20170207070925) do
 
   create_table "words", force: :cascade do |t|
     t.integer  "category_id"
+    t.string   "content"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

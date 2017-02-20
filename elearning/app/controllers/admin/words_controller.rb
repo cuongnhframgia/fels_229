@@ -1,4 +1,6 @@
 class Admin::WordsController < ApplicationController
+  before_action :logged_in_user
+  before_action :verify_admin
   before_action :load_categories
   before_action :find_word, except: [:index, :create, :new]
 
@@ -12,9 +14,13 @@ class Admin::WordsController < ApplicationController
 
   def create
     @word = Word.new words_params
-    @word.save
-    respond_to do |format|
-      format.js
+    if @word.save
+      flash[:success] = t"add_success"
+      redirect_to new_admin_word_path
+    else
+      respond_to do |format|
+        format.js
+      end
     end 	
   end
 

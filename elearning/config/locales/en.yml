@@ -24,6 +24,12 @@ en:
   wrong_category: "Can't delete category"
   category_not_found: "Category not found"
   not_admin: "You are not admin"
+  num_answers: "Numbers don't < 2"
+  need_avaliable: "Answer don't empty"
+  no_more_than_one: "No more than one answer"
+  add_word: "Add word success"
+  update_success: "Update successed"
+  word_not_found: "Word not found"
   
   activities:
     activity: 
@@ -72,6 +78,16 @@ en:
         update: "Edit Categories"
       update:
         update: "Category updated"
+    words:
+      new:
+        add: "Add word"
+      form:
+        content: "Content"
+      edit:
+        edit_word: "Edit word"
+        create_word: "Create word"
+      update:
+        update: "Word updated"
   shared:
     error: "error"
     contains: "The form contains "
